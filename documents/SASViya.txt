@@ -1,0 +1,3 @@
+From the world leader in analytics comes a modern, open platform that conquers any analytics challenge – from experimental to mission-critical. SAS Viya is a single, cloud-ready environment that serves everyone – from data scientists to business analysts, application developers to executives – with the reliable, scalable, secure analytics management and governance essential for agile IT.
+
+Best Practices Code

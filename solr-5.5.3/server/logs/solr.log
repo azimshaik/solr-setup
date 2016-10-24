@@ -1,0 +1,558 @@
+2016-10-12 01:41:21.397 INFO  (main) [   ] o.e.j.u.log Logging initialized @1559ms
+2016-10-12 01:41:21.942 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
+2016-10-12 01:41:21.973 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-10-12 01:41:21.976 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/C:/solr/solr-5.5.3/server/contexts/] at interval 0
+2016-10-12 01:41:24.233 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-10-12 01:41:24.300 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@e25b2fe{/solr,file:/C:/solr/solr-5.5.3/server/solr-webapp/webapp/,STARTING}{C:\solr\solr-5.5.3\server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-10-12 01:41:24.392 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=117244645@6fd02e5
+2016-10-12 01:41:24.560 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-10-12 01:41:24.563 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: C:\Solr\cores
+2016-10-12 01:41:24.583 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: 'C:\Solr\cores'
+2016-10-12 01:41:24.586 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-10-12 01:41:24.589 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: C:\Solr\cores
+2016-10-12 01:41:24.605 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Solr\cores\solr.xml
+2016-10-12 01:41:25.109 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: C:\Solr\cores
+2016-10-12 01:41:25.284 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1027591600
+2016-10-12 01:41:25.286 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=C:\Solr\cores]
+2016-10-12 01:41:25.290 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from C:\Solr\cores\lib to classpath: C:\Solr\cores\lib
+2016-10-12 01:41:25.362 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+2016-10-12 01:41:25.992 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-10-12 01:41:26.008 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-10-12 01:41:26.011 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-10-12 01:41:26.028 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-10-12 01:41:26.031 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-10-12 01:41:26.244 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath C:\Solr\cores
+2016-10-12 01:41:26.251 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=test, config=solrconfig.xml, loadOnStartup=true , schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data}
+2016-10-12 01:41:26.255 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core test in C:\Solr\cores\test
+2016-10-12 01:41:26.257 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions
+2016-10-12 01:41:26.263 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=C:\solr\solr-5.5.3\server
+2016-10-12 01:41:26.264 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-10-12 01:41:26.277 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@e25b2fe{/solr,file:/C:/solr/solr-5.5.3/server/solr-webapp/webapp/,AVAILABLE}{C:\solr\solr-5.5.3\server/solr-webapp/webapp}
+2016-10-12 01:41:26.379 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@4135c3b{HTTP/1.1}{0.0.0.0:8983}
+2016-10-12 01:41:26.381 INFO  (main) [   ] o.e.j.s.Server Started @6545ms
+2016-10-12 01:41:39.241 INFO  (qtp1450821318-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1476236499004} status=0 QTime=230
+2016-10-12 01:41:39.724 INFO  (qtp1450821318-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1476236499341} status=0 QTime=363
+2016-10-12 01:41:39.808 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: 'C:\Solr\cores\test'
+2016-10-12 01:41:39.811 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-10-12 01:41:39.814 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: C:\Solr\cores
+2016-10-12 01:41:40.002 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2016-10-12 01:41:40.007 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-10-12 01:41:40.037 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-10-12 01:41:40.040 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-10-12 01:41:40.044 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-10-12 01:41:40.047 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-10-12 01:41:40.050 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-10-12 01:41:40.053 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-10-12 01:41:40.056 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-10-12 01:41:40.060 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-10-12 01:41:40.063 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-10-12 01:41:40.066 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-10-12 01:41:40.070 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-10-12 01:41:40.073 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-10-12 01:41:40.076 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-10-12 01:41:40.079 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-10-12 01:41:40.082 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-10-12 01:41:40.085 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-10-12 01:41:40.090 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-10-12 01:41:40.092 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-10-12 01:41:40.095 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-10-12 01:41:40.098 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-10-12 01:41:40.101 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-10-12 01:41:40.104 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-10-12 01:41:40.107 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-10-12 01:41:40.111 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-10-12 01:41:40.114 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-10-12 01:41:40.117 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-10-12 01:41:40.119 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-10-12 01:41:40.122 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-10-12 01:41:40.127 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-10-12 01:41:40.130 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-10-12 01:41:40.132 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-10-12 01:41:40.136 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-10-12 01:41:40.139 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-10-12 01:41:40.142 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/dist/solr-cell-5.5.3.jar' to classloader
+2016-10-12 01:41:40.145 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-10-12 01:41:40.147 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-10-12 01:41:40.151 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-10-12 01:41:40.156 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-10-12 01:41:40.159 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-10-12 01:41:40.162 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-10-12 01:41:40.165 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-10-12 01:41:40.168 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-10-12 01:41:40.171 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/dist/solr-clustering-5.5.3.jar' to classloader
+2016-10-12 01:41:40.175 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-10-12 01:41:40.177 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-10-12 01:41:40.180 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/dist/solr-langid-5.5.3.jar' to classloader
+2016-10-12 01:41:40.183 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-10-12 01:41:40.186 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-10-12 01:41:40.189 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-10-12 01:41:40.192 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-10-12 01:41:40.195 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/dist/solr-velocity-5.5.3.jar' to classloader
+2016-10-12 01:41:41.951 INFO  (qtp1450821318-14) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2016-10-12 01:41:41.964 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2016-10-12 01:41:42.131 INFO  (qtp1450821318-14) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-10-12 01:41:42.177 INFO  (qtp1450821318-14) [   ] o.a.s.s.IndexSchema [test] Schema name=adtrax
+2016-10-12 01:41:42.282 INFO  (qtp1450821318-14) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-10-12 01:41:42.285 INFO  (qtp1450821318-14) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or 'C:\Solr\cores\test'
+2016-10-12 01:41:42.289 INFO  (qtp1450821318-14) [   ] o.a.s.c.CoreContainer Creating SolrCore 'test' using configuration from instancedir C:\Solr\cores\test
+2016-10-12 01:41:42.302 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-10-12 01:41:42.318 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SolrCore [[test] ] Opening new SolrCore at [C:\Solr\cores\test], dataDir=[C:\Solr\cores\test\data\]
+2016-10-12 01:41:42.340 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-10-12 01:41:42.346 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SolrCore [[test] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-10-12 01:41:42.348 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SolrCore [[test] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}]
+2016-10-12 01:41:42.356 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-10-12 01:41:42.384 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.CachingDirectoryFactory return new directory for C:\solr\cores\test\data
+2016-10-12 01:41:42.409 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SolrCore New index directory detected: old=null new=C:\Solr\cores\test\data\index/
+2016-10-12 01:41:42.413 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.CachingDirectoryFactory return new directory for C:\solr\cores\test\data\index
+2016-10-12 01:41:42.454 INFO  (OldIndexDirectoryCleanupThreadForCore-test) [   x:test] o.a.s.c.SolrCore Looking for old index directories to cleanup for core test in C:\Solr\cores\test\data\
+2016-10-12 01:41:42.457 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-10-12 01:41:42.489 INFO  (qtp1450821318-14) [   x:test] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-10-12 01:41:42.673 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-10-12 01:41:42.804 INFO  (qtp1450821318-14) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-12 01:41:42.813 INFO  (qtp1450821318-14) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-12 01:41:42.815 INFO  (qtp1450821318-14) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-12 01:41:42.817 INFO  (qtp1450821318-14) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-12 01:41:42.832 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-10-12 01:41:42.834 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-10-12 01:41:42.836 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-10-12 01:41:42.840 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-10-12 01:41:42.842 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.PluginBag requestHandler : '/suggest' created with startup=lazy 
+2016-10-12 01:41:42.844 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-10-12 01:41:42.846 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-10-12 01:41:42.848 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-10-12 01:41:42.850 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/suggest,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-10-12 01:41:42.860 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-10-12 01:41:42.904 INFO  (qtp1450821318-14) [   x:test] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-10-12 01:41:42.906 INFO  (qtp1450821318-14) [   x:test] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-10-12 01:41:43.024 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@2bdfcf9e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_d,generation=13}
+2016-10-12 01:41:43.030 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 13
+2016-10-12 01:41:43.195 INFO  (qtp1450821318-14) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@584f440f[test] main
+2016-10-12 01:41:43.233 INFO  (qtp1450821318-14) [   x:test] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Solr\cores\test\conf
+2016-10-12 01:41:43.235 INFO  (qtp1450821318-14) [   x:test] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=C:\Solr\cores\test\conf}
+2016-10-12 01:41:43.250 INFO  (qtp1450821318-14) [   x:test] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=C:\Solr\cores\test\conf
+2016-10-12 01:41:43.253 INFO  (qtp1450821318-14) [   x:test] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-10-12 01:41:43.261 INFO  (qtp1450821318-14) [   x:test] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-10-12 01:41:43.268 INFO  (qtp1450821318-14) [   x:test] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-10-12 01:41:43.295 INFO  (qtp1450821318-14) [   x:test] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-10-12 01:41:43.302 INFO  (qtp1450821318-14) [   x:test] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2016-10-12 01:41:43.311 INFO  (qtp1450821318-14) [   x:test] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2016-10-12 01:41:43.354 INFO  (qtp1450821318-14) [   x:test] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2016-10-12 01:41:43.361 INFO  (qtp1450821318-14) [   x:test] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\Solr\cores\test\conf\elevate.xml
+2016-10-12 01:41:43.390 INFO  (qtp1450821318-14) [   x:test] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-10-12 01:41:43.393 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@584f440f[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_b(5.5.3):C1)))}
+2016-10-12 01:41:43.394 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.CoreContainer registering core: test
+2016-10-12 01:41:43.419 ERROR (qtp1450821318-34) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [C:\Solr\cores\test\conf\admin-extra.menu-bottom.html]
+2016-10-12 01:41:43.419 ERROR (qtp1450821318-14) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [C:\Solr\cores\test\conf\admin-extra.menu-top.html]
+2016-10-12 01:41:43.419 ERROR (qtp1450821318-20) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [C:\Solr\cores\test\conf\admin-extra.html]
+2016-10-12 01:41:43.448 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1476236499746} status=404 QTime=3648
+2016-10-12 01:41:43.448 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1476236499746} status=404 QTime=3652
+2016-10-12 01:41:43.449 INFO  (qtp1450821318-20) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1476236499834} status=404 QTime=3605
+2016-10-12 01:41:43.463 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1476236499837} status=503 QTime=2
+2016-10-12 01:41:43.479 INFO  (qtp1450821318-19) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/system params={wt=json&_=1476236499832} status=0 QTime=3636
+2016-10-12 01:41:43.553 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.S.Request [test]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=3 status=0 QTime=135
+2016-10-12 01:41:43.564 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-12 01:41:43.567 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-10-12 01:41:43.569 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2016-10-12 01:41:43.572 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@584f440f[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_b(5.5.3):C1)))}
+2016-10-12 01:41:43.579 INFO  (qtp1450821318-32) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/replication params={wt=json&command=details&_=1476236499831} status=0 QTime=3737
+2016-10-12 01:41:43.580 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1476236499828} status=0 QTime=3739
+2016-10-12 01:42:16.120 ERROR (qtp1450821318-23) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={q=text:Hillary}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 01:42:16.168 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} status=400 QTime=53
+2016-10-12 01:43:56.449 ERROR (qtp1450821318-38) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={q=text:Hillary}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 01:43:56.496 INFO  (qtp1450821318-38) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} status=400 QTime=48
+2016-10-12 01:45:20.327 ERROR (qtp1450821318-14) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={q=text:}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 01:45:20.373 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=47
+2016-10-12 01:45:44.714 ERROR (qtp1450821318-14) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={q=text:azim}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 01:45:44.758 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} status=400 QTime=44
+2016-10-12 01:46:59.919 ERROR (qtp1450821318-15) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={q=text:azim}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 01:46:59.968 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} status=400 QTime=49
+2016-10-12 01:48:43.187 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:+Clinton} hits=2 status=0 QTime=1
+2016-10-12 01:48:51.342 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:+azim} hits=1 status=0 QTime=1
+2016-10-12 01:52:59.430 ERROR (qtp1450821318-23) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={q=text:azim}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 01:52:59.481 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} status=400 QTime=51
+2016-10-12 02:08:26.679 ERROR (qtp1450821318-39) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={q=text:azim}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 02:08:26.729 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} status=400 QTime=50
+2016-10-12 02:12:03.537 ERROR (qtp1450821318-38) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 02:12:03.588 INFO  (qtp1450821318-38) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={} status=400 QTime=51
+2016-10-12 02:12:41.252 ERROR (qtp1450821318-39) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={azim=}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 02:12:41.295 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={azim=} status=400 QTime=43
+2016-10-12 02:13:05.023 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:+azim} hits=1 status=0 QTime=9
+2016-10-12 02:13:10.654 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=1 status=0 QTime=1
+2016-10-12 02:13:18.694 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=6
+2016-10-12 02:13:25.180 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:code} hits=1 status=0 QTime=2
+2016-10-12 02:16:51.418 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:code&wt=json} hits=1 status=0 QTime=1
+2016-10-12 02:18:11.168 ERROR (qtp1450821318-39) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Bad contentType for search handler :text/xml request={q=text:code&wt=json}
+	at org.apache.solr.request.json.RequestUtil.processParams(RequestUtil.java:72)
+	at org.apache.solr.util.SolrPluginUtils.setDefaults(SolrPluginUtils.java:172)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:152)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:256)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:219)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-10-12 02:18:11.221 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:code&wt=json} status=400 QTime=53
+2016-10-12 02:27:50.509 INFO  (qtp1450821318-38) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=azim&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=9
+2016-10-12 02:28:09.424 INFO  (qtp1450821318-38) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Hillary&hl=true&indent=on&hl.fl=name,features&wt=json} hits=2 status=0 QTime=1
+2016-10-12 02:28:21.649 INFO  (qtp1450821318-38) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Hillary&hl=true&indent=on&hl.fl=name,features&wt=json} hits=2 status=0 QTime=1
+2016-10-12 02:28:42.548 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=SAS+code&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=73
+2016-10-12 02:28:46.139 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=SAS+code&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=1
+2016-10-12 02:35:50.610 INFO  (qtp1450821318-14) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[-889781790]} 0 143
+2016-10-12 02:35:50.649 INFO  (qtp1450821318-15) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-12 02:35:50.948 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@2bdfcf9e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_d,generation=13}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@2bdfcf9e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_e,generation=14}
+2016-10-12 02:35:50.958 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 14
+2016-10-12 02:35:50.977 INFO  (qtp1450821318-15) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@7d15f32e[test] main
+2016-10-12 02:35:50.982 INFO  (qtp1450821318-15) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-12 02:35:50.982 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7d15f32e[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_b(5.5.3):C1) Uninverting(_c(5.5.3):C1)))}
+2016-10-12 02:35:50.990 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-12 02:35:50.992 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@7d15f32e[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_b(5.5.3):C1) Uninverting(_c(5.5.3):C1)))}
+2016-10-12 02:35:50.999 INFO  (qtp1450821318-15) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 350
+2016-10-12 02:36:15.920 INFO  (qtp1450821318-15) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[-1255077938]} 0 7
+2016-10-12 02:36:15.965 INFO  (qtp1450821318-23) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-12 02:36:16.363 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@2bdfcf9e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_e,generation=14}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@2bdfcf9e; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_f,generation=15}
+2016-10-12 02:36:16.369 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 15
+2016-10-12 02:36:16.389 INFO  (qtp1450821318-23) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@3a61ff74[test] main
+2016-10-12 02:36:16.389 INFO  (qtp1450821318-23) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-12 02:36:16.389 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3a61ff74[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_b(5.5.3):C1) Uninverting(_c(5.5.3):C1) Uninverting(_d(5.5.3):C1)))}
+2016-10-12 02:36:16.415 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-12 02:36:16.418 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@3a61ff74[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_b(5.5.3):C1) Uninverting(_c(5.5.3):C1) Uninverting(_d(5.5.3):C1)))}
+2016-10-12 02:36:16.419 INFO  (qtp1450821318-23) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 462
+2016-10-12 02:36:25.056 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=SAS&hl=true&indent=on&hl.fl=name,features&wt=json} hits=3 status=0 QTime=4
+2016-10-12 02:36:35.855 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Best+Practices&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=3
+2016-10-12 02:36:43.909 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Practices&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=1
+2016-10-12 02:36:47.279 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=SAS&hl=true&indent=on&hl.fl=name,features&wt=json} hits=3 status=0 QTime=1
+2016-10-12 02:37:09.268 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Azim&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=2
+2016-10-12 02:38:23.683 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=SAS&hl=true&indent=on&hl.fl=name,features&wt=json} hits=3 status=0 QTime=0
+2016-10-12 02:38:54.023 INFO  (qtp1450821318-38) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Hello&hl=true&indent=on&hl.fl=name,features&wt=json} hits=0 status=0 QTime=1
+2016-10-12 02:39:02.643 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Hello&hl=true&indent=on&hl.fl=name,features&wt=json} hits=0 status=0 QTime=0
+2016-10-12 02:39:03.828 INFO  (qtp1450821318-38) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Hello&hl=true&indent=on&hl.fl=name,features&wt=json} hits=0 status=0 QTime=0
+2016-10-12 02:39:09.930 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Obama&hl=true&indent=on&hl.fl=name,features&wt=json} hits=2 status=0 QTime=2
+2016-10-12 02:39:21.523 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Bush&hl=true&indent=on&hl.fl=name,features&wt=json} hits=0 status=0 QTime=1
+2016-10-12 02:39:30.563 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=KeyBank&hl=true&indent=on&hl.fl=name,features&wt=json} hits=0 status=0 QTime=1
+2016-10-12 02:39:32.817 INFO  (qtp1450821318-38) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Key&hl=true&indent=on&hl.fl=name,features&wt=json} hits=0 status=0 QTime=1
+2016-10-12 02:39:34.715 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=K&hl=true&indent=on&hl.fl=name,features&wt=json} hits=0 status=0 QTime=1
+2016-10-12 02:39:36.916 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=a&hl=true&indent=on&hl.fl=name,features&wt=json} hits=5 status=0 QTime=1
+2016-10-12 02:39:44.787 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Azim&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=0
+2016-10-12 02:39:50.267 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Azim&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=0
+2016-10-12 02:39:50.787 INFO  (qtp1450821318-38) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Azim&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=0
+2016-10-12 02:39:50.937 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Azim&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=0
+2016-10-12 02:39:51.067 INFO  (qtp1450821318-23) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Azim&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=0
+2016-10-12 02:39:51.235 INFO  (qtp1450821318-39) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=Azim&hl=true&indent=on&hl.fl=name,features&wt=json} hits=1 status=0 QTime=0
+2016-10-12 02:40:26.890 INFO  (qtp1450821318-14) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=hello&hl=true&indent=on&hl.fl=name,features&wt=json} hits=0 status=0 QTime=0
+2016-10-12 02:40:30.863 INFO  (qtp1450821318-15) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=SAS&hl=true&indent=on&hl.fl=name,features&wt=json} hits=3 status=0 QTime=0

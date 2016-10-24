@@ -1,0 +1,11 @@
+Macro variables
+Macro functions
+symput and symget function to pass information to and from a data step
+Creating a macro variable using proc sql
+Creating a list of file names for a data step using a macro program
+A macro program for repeating a procedure multiple times
+The SAS macro language is a very versatile and useful tool. It is often used to reduce the amount of regular SAS code and it facilitates passing information from one procedure to another procedure. Furthermore, we can use it to write SAS programs that are "dynamic" and flexible. Generally, we can consider macro language to be composed of macro variables and macro programs. In this seminar we will demonstrate how to create macro variables and how to write basic macro programs.
+
+Macro Variables
+
+A macro variable in SAS is a string variable that allows you to dynamically modify the text in a SAS program through symbolic substitution. The following example demonstrates how to create and use a macro variable. First we set up some system options to have a more concise output style.

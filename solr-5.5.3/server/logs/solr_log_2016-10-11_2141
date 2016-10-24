@@ -1,0 +1,1304 @@
+2016-10-05 01:18:08.464 INFO  (main) [   ] o.e.j.u.log Logging initialized @1037ms
+2016-10-05 01:18:08.719 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
+2016-10-05 01:18:08.738 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-10-05 01:18:08.742 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/C:/solr/solr-5.5.3/server/contexts/] at interval 0
+2016-10-05 01:18:11.598 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-10-05 01:18:11.635 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@e25b2fe{/solr,file:/C:/solr/solr-5.5.3/server/solr-webapp/webapp/,STARTING}{C:\solr\solr-5.5.3\server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-10-05 01:18:11.727 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=117244645@6fd02e5
+2016-10-05 01:18:11.819 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-10-05 01:18:11.822 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: C:\Solr\cores
+2016-10-05 01:18:11.827 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: 'C:\Solr\cores'
+2016-10-05 01:18:11.831 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-10-05 01:18:11.835 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: C:\Solr\cores
+2016-10-05 01:18:11.848 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Solr\cores\solr.xml
+2016-10-05 01:18:11.949 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: C:\Solr\cores
+2016-10-05 01:18:12.102 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1161667116
+2016-10-05 01:18:12.104 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=C:\Solr\cores]
+2016-10-05 01:18:12.107 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from C:\Solr\cores\lib to classpath: C:\Solr\cores\lib
+2016-10-05 01:18:12.132 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+2016-10-05 01:18:12.478 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-10-05 01:18:12.527 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-10-05 01:18:12.531 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-10-05 01:18:12.537 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-10-05 01:18:12.540 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-10-05 01:18:12.798 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath C:\Solr\cores
+2016-10-05 01:18:12.852 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=test, config=solrconfig.xml, loadOnStartup=true , schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data}
+2016-10-05 01:18:12.859 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core test in C:\Solr\cores\test
+2016-10-05 01:18:12.862 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions
+2016-10-05 01:18:12.869 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=C:\solr\solr-5.5.3\server
+2016-10-05 01:18:12.871 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-10-05 01:18:12.896 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@e25b2fe{/solr,file:/C:/solr/solr-5.5.3/server/solr-webapp/webapp/,AVAILABLE}{C:\solr\solr-5.5.3\server/solr-webapp/webapp}
+2016-10-05 01:18:12.942 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@799f10e1{HTTP/1.1}{0.0.0.0:8983}
+2016-10-05 01:18:12.944 INFO  (main) [   ] o.e.j.s.Server Started @5520ms
+2016-10-05 01:18:38.134 INFO  (qtp1450821318-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1475630317885} status=0 QTime=240
+2016-10-05 01:18:40.251 INFO  (qtp1450821318-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1475630318232} status=0 QTime=2013
+2016-10-05 01:18:47.031 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: 'C:\Solr\cores\test'
+2016-10-05 01:18:47.035 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-10-05 01:18:47.039 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: C:\Solr\cores
+2016-10-05 01:18:47.134 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2016-10-05 01:18:47.141 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-10-05 01:18:47.161 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-10-05 01:18:47.168 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-10-05 01:18:47.174 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-10-05 01:18:47.179 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-10-05 01:18:47.186 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-10-05 01:18:47.191 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-10-05 01:18:47.197 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-10-05 01:18:47.204 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-10-05 01:18:47.209 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-10-05 01:18:47.213 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-10-05 01:18:47.219 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-10-05 01:18:47.224 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-10-05 01:18:47.229 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-10-05 01:18:47.234 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-10-05 01:18:47.239 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-10-05 01:18:47.244 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-10-05 01:18:47.250 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-10-05 01:18:47.255 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-10-05 01:18:47.259 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-10-05 01:18:47.264 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-10-05 01:18:47.270 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-10-05 01:18:47.275 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-10-05 01:18:47.280 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-10-05 01:18:47.286 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-10-05 01:18:47.290 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-10-05 01:18:47.295 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-10-05 01:18:47.301 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-10-05 01:18:47.306 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-10-05 01:18:47.311 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-10-05 01:18:47.316 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-10-05 01:18:47.322 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-10-05 01:18:47.327 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-10-05 01:18:47.331 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-10-05 01:18:47.337 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/dist/solr-cell-5.5.3.jar' to classloader
+2016-10-05 01:18:47.342 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-10-05 01:18:47.347 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-10-05 01:18:47.352 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-10-05 01:18:47.360 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-10-05 01:18:47.367 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-10-05 01:18:47.373 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-10-05 01:18:47.380 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-10-05 01:18:47.387 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-10-05 01:18:47.392 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/dist/solr-clustering-5.5.3.jar' to classloader
+2016-10-05 01:18:47.397 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-10-05 01:18:47.403 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-10-05 01:18:47.409 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/dist/solr-langid-5.5.3.jar' to classloader
+2016-10-05 01:18:47.414 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-10-05 01:18:47.419 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-10-05 01:18:47.425 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-10-05 01:18:47.429 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-10-05 01:18:47.434 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/C:/solr/solr-5.5.3/dist/solr-velocity-5.5.3.jar' to classloader
+2016-10-05 01:18:49.137 INFO  (qtp1450821318-17) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2016-10-05 01:18:49.154 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2016-10-05 01:18:49.301 INFO  (qtp1450821318-17) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-10-05 01:18:49.376 INFO  (qtp1450821318-17) [   ] o.a.s.s.IndexSchema [test] Schema name=adtrax
+2016-10-05 01:18:49.466 INFO  (qtp1450821318-17) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-10-05 01:18:49.471 INFO  (qtp1450821318-17) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or 'C:\Solr\cores\test'
+2016-10-05 01:18:49.479 INFO  (qtp1450821318-17) [   ] o.a.s.c.CoreContainer Creating SolrCore 'test' using configuration from instancedir C:\Solr\cores\test
+2016-10-05 01:18:49.484 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-10-05 01:18:49.504 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrCore [[test] ] Opening new SolrCore at [C:\Solr\cores\test], dataDir=[C:\Solr\cores\test\data\]
+2016-10-05 01:18:49.511 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-10-05 01:18:49.519 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrCore [[test] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-10-05 01:18:49.524 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrCore [[test] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}]
+2016-10-05 01:18:49.536 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-10-05 01:18:49.555 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.CachingDirectoryFactory return new directory for C:\solr\cores\test\data
+2016-10-05 01:18:49.560 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrCore New index directory detected: old=null new=C:\Solr\cores\test\data\index/
+2016-10-05 01:18:49.566 WARN  (qtp1450821318-17) [   x:test] o.a.s.c.SolrCore [test] Solr index directory 'C:\Solr\cores\test\data\index' doesn't exist. Creating new index...
+2016-10-05 01:18:49.605 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.CachingDirectoryFactory return new directory for C:\solr\cores\test\data\index
+2016-10-05 01:18:49.760 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-10-05 01:18:49.776 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-10-05 01:18:49.788 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-10-05 01:18:49.789 INFO  (OldIndexDirectoryCleanupThreadForCore-test) [   x:test] o.a.s.c.SolrCore Looking for old index directories to cleanup for core test in C:\Solr\cores\test\data\
+2016-10-05 01:18:49.809 INFO  (qtp1450821318-17) [   x:test] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-10-05 01:18:49.994 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-10-05 01:18:50.179 INFO  (qtp1450821318-17) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-05 01:18:50.187 INFO  (qtp1450821318-17) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-05 01:18:50.191 INFO  (qtp1450821318-17) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-05 01:18:50.195 INFO  (qtp1450821318-17) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-10-05 01:18:50.217 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-10-05 01:18:50.221 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-10-05 01:18:50.225 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-10-05 01:18:50.232 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-10-05 01:18:50.236 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.PluginBag requestHandler : '/suggest' created with startup=lazy 
+2016-10-05 01:18:50.239 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-10-05 01:18:50.244 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-10-05 01:18:50.247 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-10-05 01:18:50.253 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/suggest,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-10-05 01:18:50.271 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-10-05 01:18:50.288 INFO  (qtp1450821318-17) [   x:test] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-10-05 01:18:50.291 INFO  (qtp1450821318-17) [   x:test] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-10-05 01:18:50.304 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-10-05 01:18:50.315 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-10-05 01:18:50.330 INFO  (qtp1450821318-17) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@61d47290[test] main
+2016-10-05 01:18:50.374 INFO  (qtp1450821318-17) [   x:test] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Solr\cores\test\conf
+2016-10-05 01:18:50.378 INFO  (qtp1450821318-17) [   x:test] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=C:\Solr\cores\test\conf}
+2016-10-05 01:18:50.406 INFO  (qtp1450821318-17) [   x:test] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=C:\Solr\cores\test\conf
+2016-10-05 01:18:50.410 INFO  (qtp1450821318-17) [   x:test] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-10-05 01:18:50.421 INFO  (qtp1450821318-17) [   x:test] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-10-05 01:18:50.431 INFO  (qtp1450821318-17) [   x:test] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-10-05 01:18:50.491 INFO  (qtp1450821318-17) [   x:test] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-10-05 01:18:50.509 INFO  (qtp1450821318-17) [   x:test] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2016-10-05 01:18:50.515 INFO  (qtp1450821318-17) [   x:test] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2016-10-05 01:18:50.545 INFO  (qtp1450821318-17) [   x:test] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2016-10-05 01:18:50.556 INFO  (qtp1450821318-17) [   x:test] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\Solr\cores\test\conf\elevate.xml
+2016-10-05 01:18:50.576 INFO  (qtp1450821318-17) [   x:test] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-10-05 01:18:50.582 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@61d47290[test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-10-05 01:18:50.583 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.CoreContainer registering core: test
+2016-10-05 01:18:50.604 ERROR (qtp1450821318-16) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [C:\Solr\cores\test\conf\admin-extra.html]
+2016-10-05 01:18:50.605 ERROR (qtp1450821318-17) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [C:\Solr\cores\test\conf\admin-extra.menu-top.html]
+2016-10-05 01:18:50.604 ERROR (qtp1450821318-36) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [C:\Solr\cores\test\conf\admin-extra.menu-bottom.html]
+2016-10-05 01:18:50.617 INFO  (qtp1450821318-17) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1475630326918} status=404 QTime=3666
+2016-10-05 01:18:50.613 INFO  (qtp1450821318-16) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1475630326987} status=404 QTime=3567
+2016-10-05 01:18:50.630 INFO  (qtp1450821318-32) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/system params={wt=json&_=1475630326984} status=0 QTime=3609
+2016-10-05 01:18:50.626 INFO  (qtp1450821318-36) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1475630326919} status=404 QTime=3671
+2016-10-05 01:18:50.650 INFO  (qtp1450821318-35) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1475630326989} status=503 QTime=4
+2016-10-05 01:18:50.699 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.S.Request [test]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=104
+2016-10-05 01:18:50.710 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-05 01:18:50.714 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-10-05 01:18:50.721 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2016-10-05 01:18:50.726 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@61d47290[test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-10-05 01:18:50.734 INFO  (qtp1450821318-21) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/replication params={wt=json&command=details&_=1475630326981} status=0 QTime=3739
+2016-10-05 01:18:50.735 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1475630326977} status=0 QTime=3742
+2016-10-05 01:58:42.508 INFO  (qtp1450821318-16) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[2122371034]} 0 168
+2016-10-05 01:58:42.544 INFO  (qtp1450821318-19) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-05 01:58:43.031 INFO  (qtp1450821318-19) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+2016-10-05 01:58:43.046 INFO  (qtp1450821318-19) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 2
+2016-10-05 01:58:43.081 INFO  (qtp1450821318-19) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@5749addb[test] main
+2016-10-05 01:58:43.085 INFO  (qtp1450821318-19) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-05 01:58:43.085 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5749addb[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.5.3):C1)))}
+2016-10-05 01:58:43.095 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-05 01:58:43.098 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@5749addb[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.5.3):C1)))}
+2016-10-05 01:58:43.109 INFO  (qtp1450821318-19) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 565
+2016-10-05 01:59:06.523 INFO  (qtp1450821318-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1475632746492} status=0 QTime=0
+2016-10-05 01:59:06.606 INFO  (qtp1450821318-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1475632746545} status=0 QTime=31
+2016-10-05 01:59:06.630 ERROR (qtp1450821318-21) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [C:\Solr\cores\test\conf\admin-extra.menu-top.html]
+2016-10-05 01:59:06.631 ERROR (qtp1450821318-19) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [C:\Solr\cores\test\conf\admin-extra.menu-bottom.html]
+2016-10-05 01:59:06.636 INFO  (qtp1450821318-21) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1475632746627} status=404 QTime=6
+2016-10-05 01:59:06.644 INFO  (qtp1450821318-19) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1475632746627} status=404 QTime=13
+2016-10-05 01:59:06.666 INFO  (qtp1450821318-42) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1475632746653} status=503 QTime=0
+2016-10-05 01:59:06.666 ERROR (qtp1450821318-16) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [C:\Solr\cores\test\conf\admin-extra.html]
+2016-10-05 01:59:06.666 INFO  (qtp1450821318-32) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1475632746641} status=0 QTime=1
+2016-10-05 01:59:06.685 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/system params={wt=json&_=1475632746649} status=0 QTime=20
+2016-10-05 01:59:06.683 INFO  (qtp1450821318-16) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1475632746651} status=404 QTime=17
+2016-10-05 01:59:06.669 INFO  (qtp1450821318-43) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/replication params={wt=json&command=details&_=1475632746648} status=0 QTime=4
+2016-10-05 02:00:30.102 INFO  (qtp1450821318-16) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:trump} hits=1 status=0 QTime=47
+2016-10-05 02:04:58.775 INFO  (qtp1450821318-42) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:jump} hits=0 status=0 QTime=2
+2016-10-05 02:06:56.143 INFO  (qtp1450821318-16) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:and} hits=1 status=0 QTime=1
+2016-10-05 02:07:07.741 INFO  (qtp1450821318-32) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:US} hits=0 status=0 QTime=1
+2016-10-05 02:19:59.283 INFO  (qtp1450821318-16) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[2122371034]} 0 8
+2016-10-05 02:19:59.319 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-05 02:19:59.587 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3}
+2016-10-05 02:19:59.604 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 3
+2016-10-05 02:19:59.609 INFO  (qtp1450821318-34) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@4116cc82[test] main
+2016-10-05 02:19:59.617 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-05 02:19:59.617 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4116cc82[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(5.5.3):C1)))}
+2016-10-05 02:19:59.631 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-05 02:19:59.634 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@4116cc82[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(5.5.3):C1)))}
+2016-10-05 02:19:59.649 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 330
+2016-10-05 02:20:21.571 INFO  (qtp1450821318-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1475634021565} status=0 QTime=0
+2016-10-05 02:20:21.614 INFO  (qtp1450821318-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1475634021596} status=0 QTime=12
+2016-10-05 02:20:30.809 ERROR (qtp1450821318-42) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [C:\Solr\cores\test\conf\admin-extra.menu-top.html]
+2016-10-05 02:20:30.812 ERROR (qtp1450821318-32) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [C:\Solr\cores\test\conf\admin-extra.menu-bottom.html]
+2016-10-05 02:20:30.817 INFO  (qtp1450821318-42) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1475634030801} status=404 QTime=8
+2016-10-05 02:20:30.822 INFO  (qtp1450821318-32) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1475634030801} status=404 QTime=10
+2016-10-05 02:20:30.833 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1475634030823} status=0 QTime=1
+2016-10-05 02:20:30.841 INFO  (qtp1450821318-42) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1475634030830} status=503 QTime=0
+2016-10-05 02:20:30.841 ERROR (qtp1450821318-44) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [C:\Solr\cores\test\conf\admin-extra.html]
+2016-10-05 02:20:30.841 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/replication params={wt=json&command=details&_=1475634030826} status=0 QTime=5
+2016-10-05 02:20:30.867 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1475634030828} status=404 QTime=26
+2016-10-05 02:20:30.863 INFO  (qtp1450821318-45) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/system params={wt=json&_=1475634030828} status=0 QTime=25
+2016-10-05 02:20:34.636 INFO  (qtp1450821318-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1475634034612} status=0 QTime=0
+2016-10-05 02:20:34.670 INFO  (qtp1450821318-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1475634034652} status=0 QTime=13
+2016-10-05 02:20:34.709 ERROR (qtp1450821318-47) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [C:\Solr\cores\test\conf\admin-extra.menu-top.html]
+2016-10-05 02:20:34.709 ERROR (qtp1450821318-42) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [C:\Solr\cores\test\conf\admin-extra.menu-bottom.html]
+2016-10-05 02:20:34.716 INFO  (qtp1450821318-47) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1475634034696} status=404 QTime=6
+2016-10-05 02:20:34.727 INFO  (qtp1450821318-45) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1475634034715} status=0 QTime=1
+2016-10-05 02:20:34.722 INFO  (qtp1450821318-42) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1475634034696} status=404 QTime=13
+2016-10-05 02:20:34.746 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/system params={wt=json&_=1475634034722} status=0 QTime=16
+2016-10-05 02:20:34.736 INFO  (qtp1450821318-47) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1475634034726} status=503 QTime=0
+2016-10-05 02:20:34.732 ERROR (qtp1450821318-44) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [C:\Solr\cores\test\conf\admin-extra.html]
+2016-10-05 02:20:34.732 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/replication params={wt=json&command=details&_=1475634034721} status=0 QTime=4
+2016-10-05 02:20:34.763 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1475634034724} status=404 QTime=31
+2016-10-05 02:21:24.280 INFO  (qtp1450821318-42) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:he} hits=0 status=0 QTime=1
+2016-10-10 19:56:55.802 INFO  (qtp1450821318-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1476129415560} status=0 QTime=63
+2016-10-10 19:56:56.367 INFO  (qtp1450821318-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1476129415909} status=0 QTime=225
+2016-10-10 19:56:56.782 ERROR (qtp1450821318-51) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [C:\Solr\cores\test\conf\admin-extra.menu-top.html]
+2016-10-10 19:56:56.782 ERROR (qtp1450821318-47) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [C:\Solr\cores\test\conf\admin-extra.menu-bottom.html]
+2016-10-10 19:56:56.792 INFO  (qtp1450821318-47) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1476129416388} status=404 QTime=9
+2016-10-10 19:56:56.799 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1476129416387} status=404 QTime=17
+2016-10-10 19:56:56.833 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1476129416811} status=0 QTime=15
+2016-10-10 19:56:56.913 ERROR (qtp1450821318-46) [   x:test] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [C:\Solr\cores\test\conf\admin-extra.html]
+2016-10-10 19:56:56.917 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1476129416816} status=404 QTime=4
+2016-10-10 19:56:56.928 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1476129416817} status=503 QTime=15
+2016-10-10 19:56:56.949 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/admin/system params={wt=json&_=1476129416815} status=0 QTime=35
+2016-10-10 19:56:57.348 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/replication params={wt=json&command=details&_=1476129416814} status=0 QTime=435
+2016-10-10 21:54:03.952 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:trump} hits=1 status=0 QTime=37
+2016-10-10 21:55:42.058 INFO  (qtp1450821318-51) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[2122371034]} 0 23
+2016-10-10 21:55:42.106 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-10 21:55:42.370 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_4,generation=4}
+2016-10-10 21:55:42.400 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 4
+2016-10-10 21:55:42.400 INFO  (qtp1450821318-34) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@69d77c34[test] main
+2016-10-10 21:55:42.419 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-10 21:55:42.419 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@69d77c34[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(5.5.3):C1)))}
+2016-10-10 21:55:42.419 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-10 21:55:42.437 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@69d77c34[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(5.5.3):C1)))}
+2016-10-10 21:55:42.452 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 345
+2016-10-10 21:55:55.937 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[2122371034]} 0 7
+2016-10-10 21:55:55.977 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-10 21:55:56.250 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_4,generation=4}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_5,generation=5}
+2016-10-10 21:55:56.273 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 5
+2016-10-10 21:55:56.280 INFO  (qtp1450821318-49) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@4d36441c[test] main
+2016-10-10 21:55:56.287 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-10 21:55:56.287 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4d36441c[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(5.5.3):C1)))}
+2016-10-10 21:55:56.298 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-10 21:55:56.299 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@4d36441c[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(5.5.3):C1)))}
+2016-10-10 21:55:56.318 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 341
+2016-10-10 21:56:17.829 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:trump} hits=1 status=0 QTime=1
+2016-10-10 21:56:26.568 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=1 status=0 QTime=1
+2016-10-10 21:56:35.849 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=1 status=0 QTime=1
+2016-10-10 21:57:13.819 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[2122371034]} 0 5
+2016-10-10 21:57:13.855 INFO  (qtp1450821318-51) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-10 21:57:14.119 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_5,generation=5}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_6,generation=6}
+2016-10-10 21:57:14.158 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 6
+2016-10-10 21:57:14.158 INFO  (qtp1450821318-51) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@8bf3ff8[test] main
+2016-10-10 21:57:14.158 INFO  (qtp1450821318-51) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-10 21:57:14.158 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@8bf3ff8[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(5.5.3):C1)))}
+2016-10-10 21:57:14.175 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-10 21:57:14.178 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@8bf3ff8[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(5.5.3):C1)))}
+2016-10-10 21:57:14.192 INFO  (qtp1450821318-51) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 336
+2016-10-10 21:58:36.162 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[2122371034]} 0 4
+2016-10-10 21:58:36.194 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-10 21:58:36.522 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_6,generation=6}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_7,generation=7}
+2016-10-10 21:58:36.538 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 7
+2016-10-10 21:58:36.538 INFO  (qtp1450821318-49) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@791e98f1[test] main
+2016-10-10 21:58:36.555 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-10 21:58:36.555 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@791e98f1[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(5.5.3):C1)))}
+2016-10-10 21:58:36.565 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-10 21:58:36.568 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@791e98f1[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(5.5.3):C1)))}
+2016-10-10 21:58:36.577 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 385
+2016-10-10 21:58:42.759 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=1 status=0 QTime=1
+2016-10-10 21:58:49.158 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=0 status=0 QTime=1
+2016-10-10 21:59:01.284 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=0 status=0 QTime=0
+2016-10-10 21:59:22.692 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=1 status=0 QTime=0
+2016-10-10 21:59:34.046 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=0 status=0 QTime=1
+2016-10-10 21:59:41.815 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=1 status=0 QTime=0
+2016-10-10 22:00:24.804 INFO  (qtp1450821318-46) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[1263387679]} 0 3
+2016-10-10 22:00:24.833 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-10 22:00:25.016 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_7,generation=7}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_8,generation=8}
+2016-10-10 22:00:25.017 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 8
+2016-10-10 22:00:25.033 INFO  (qtp1450821318-49) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@35db765d[test] main
+2016-10-10 22:00:25.036 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-10 22:00:25.036 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@35db765d[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(5.5.3):C1) Uninverting(_6(5.5.3):C1)))}
+2016-10-10 22:00:25.045 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-10 22:00:25.048 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@35db765d[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(5.5.3):C1) Uninverting(_6(5.5.3):C1)))}
+2016-10-10 22:00:25.055 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 221
+2016-10-10 22:00:38.184 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=1 status=0 QTime=1
+2016-10-10 22:17:38.442 INFO  (qtp1450821318-46) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[2122371034]} 0 5
+2016-10-10 22:17:38.482 INFO  (qtp1450821318-44) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-10 22:17:38.823 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_8,generation=8}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_9,generation=9}
+2016-10-10 22:17:38.844 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 9
+2016-10-10 22:17:38.849 INFO  (qtp1450821318-44) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@20313e82[test] main
+2016-10-10 22:17:38.852 INFO  (qtp1450821318-44) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-10 22:17:38.853 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@20313e82[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1)))}
+2016-10-10 22:17:38.861 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-10 22:17:38.864 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@20313e82[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1)))}
+2016-10-10 22:17:38.877 INFO  (qtp1450821318-44) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 395
+2016-10-10 22:28:51.209 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:a} hits=1 status=0 QTime=1
+2016-10-10 22:29:01.029 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:a%3Dazim} hits=2 status=0 QTime=114
+2016-10-10 22:29:17.092 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:trump} hits=1 status=0 QTime=1
+2016-10-10 22:29:49.631 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:a%3Dazim%3Dhillary} hits=2 status=0 QTime=81
+2016-10-10 22:30:00.226 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:a} hits=1 status=0 QTime=0
+2016-10-10 22:30:05.366 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=1 status=0 QTime=1
+2016-10-10 22:30:14.524 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=1 status=0 QTime=1
+2016-10-10 22:45:36.665 INFO  (qtp1450821318-44) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[1188307049]} 0 4
+2016-10-10 22:45:36.707 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-10 22:45:37.025 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_9,generation=9}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_a,generation=10}
+2016-10-10 22:45:37.025 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 10
+2016-10-10 22:45:37.025 INFO  (qtp1450821318-34) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@1444c66d[test] main
+2016-10-10 22:45:37.025 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-10 22:45:37.025 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1444c66d[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1)))}
+2016-10-10 22:45:37.025 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-10 22:45:37.041 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@1444c66d[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1)))}
+2016-10-10 22:45:37.044 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 336
+2016-10-10 22:45:48.071 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=1
+2016-10-10 22:50:24.294 INFO  (qtp1450821318-44) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[1152294041]} 0 4
+2016-10-10 22:50:24.320 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-10 22:50:24.548 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_a,generation=10}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_b,generation=11}
+2016-10-10 22:50:24.552 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 11
+2016-10-10 22:50:24.555 INFO  (qtp1450821318-34) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@52b49161[test] main
+2016-10-10 22:50:24.556 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-10 22:50:24.557 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@52b49161[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_9(5.5.3):C1)))}
+2016-10-10 22:50:24.560 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-10 22:50:24.561 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@52b49161[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_9(5.5.3):C1)))}
+2016-10-10 22:50:24.564 INFO  (qtp1450821318-34) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 243
+2016-10-10 22:51:06.931 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[1152294041]} 0 3
+2016-10-10 22:51:06.958 INFO  (qtp1450821318-46) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-10 22:51:07.211 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_b,generation=11}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_c,generation=12}
+2016-10-10 22:51:07.211 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 12
+2016-10-10 22:51:07.230 INFO  (qtp1450821318-46) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@792dd0bb[test] main
+2016-10-10 22:51:07.231 INFO  (qtp1450821318-46) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-10 22:51:07.231 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@792dd0bb[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_a(5.5.3):C1)))}
+2016-10-10 22:51:07.235 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-10 22:51:07.236 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@792dd0bb[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_a(5.5.3):C1)))}
+2016-10-10 22:51:07.244 INFO  (qtp1450821318-46) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 286
+2016-10-10 22:51:28.881 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Coding} hits=1 status=0 QTime=1
+2016-10-11 02:53:26.512 INFO  (qtp1450821318-49) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[1152294041]} 0 4
+2016-10-11 02:53:26.538 INFO  (qtp1450821318-46) [   x:test] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-10-11 02:53:26.810 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_c,generation=12}
+	commit{dir=NRTCachingDirectory(MMapDirectory@C:\solr\cores\test\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@26fa94ad; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_d,generation=13}
+2016-10-11 02:53:26.815 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.SolrDeletionPolicy newest commit generation = 13
+2016-10-11 02:53:26.819 INFO  (qtp1450821318-46) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@27722f43[test] main
+2016-10-11 02:53:26.820 INFO  (qtp1450821318-46) [   x:test] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-10-11 02:53:26.820 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@27722f43[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_b(5.5.3):C1)))}
+2016-10-11 02:53:26.824 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-10-11 02:53:26.825 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@27722f43[test] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.3):C1) Uninverting(_7(5.5.3):C1) Uninverting(_8(5.5.3):C1) Uninverting(_b(5.5.3):C1)))}
+2016-10-11 02:53:26.833 INFO  (qtp1450821318-46) [   x:test] o.a.s.u.p.LogUpdateProcessorFactory [test]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 295
+2016-10-11 21:05:01.516 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:trump} hits=1 status=0 QTime=3
+2016-10-11 21:40:50.699 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:trump} hits=1 status=0 QTime=31
+2016-10-11 21:40:51.654 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:trump} hits=1 status=0 QTime=0
+2016-10-11 21:41:31.293 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:t} hits=0 status=0 QTime=1
+2016-10-11 21:41:35.954 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=1 status=0 QTime=2
+2016-10-11 22:25:26.472 ERROR (qtp1450821318-46) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 22:25:26.611 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=188
+2016-10-11 22:25:45.359 ERROR (qtp1450821318-44) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 22:25:45.472 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=114
+2016-10-11 22:25:46.221 ERROR (qtp1450821318-46) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 22:25:46.339 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=118
+2016-10-11 22:26:02.721 ERROR (qtp1450821318-51) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 22:26:02.835 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=115
+2016-10-11 22:26:05.243 ERROR (qtp1450821318-44) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 22:26:05.356 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=114
+2016-10-11 22:26:10.275 ERROR (qtp1450821318-44) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 22:26:10.386 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=111
+2016-10-11 22:27:46.442 ERROR (qtp1450821318-51) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 22:27:46.557 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=115
+2016-10-11 23:23:19.698 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=8
+2016-10-11 23:23:31.393 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary+Clinton} hits=2 status=0 QTime=4
+2016-10-11 23:54:27.135 ERROR (qtp1450821318-44) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 23:54:27.241 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=107
+2016-10-11 23:57:18.554 ERROR (qtp1450821318-49) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 23:57:18.668 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=115
+2016-10-11 23:57:26.658 ERROR (qtp1450821318-44) [   x:test] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:216)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:246)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2102)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:654)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:496)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'text:': Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:157)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:159)
+	... 27 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 5.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    "filter(" ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:547)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:232)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:153)
+	... 30 more
+
+2016-10-11 23:57:26.767 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:} status=400 QTime=110
+2016-10-11 23:59:22.254 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=1 status=0 QTime=3
+2016-10-12 00:02:38.108 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=1 status=0 QTime=1
+2016-10-12 00:02:46.890 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=1 status=0 QTime=0
+2016-10-12 00:02:46.912 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:azim} hits=1 status=0 QTime=1
+2016-10-12 00:03:19.470 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hill} hits=0 status=0 QTime=3
+2016-10-12 00:03:21.804 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hill} hits=0 status=0 QTime=0
+2016-10-12 00:03:46.342 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=0
+2016-10-12 00:03:49.827 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=0
+2016-10-12 00:09:18.078 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=0
+2016-10-12 00:09:23.005 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=0
+2016-10-12 00:09:43.255 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=0
+2016-10-12 00:45:59.405 INFO  (qtp1450821318-51) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:+Clinton} hits=2 status=0 QTime=2
+2016-10-12 00:46:06.238 INFO  (qtp1450821318-44) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:+Clinton} hits=2 status=0 QTime=0
+2016-10-12 00:47:16.970 INFO  (qtp1450821318-34) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=0
+2016-10-12 00:59:56.651 INFO  (qtp1450821318-49) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=0
+2016-10-12 01:16:41.347 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:+Clinton} hits=2 status=0 QTime=1
+2016-10-12 01:30:00.197 INFO  (qtp1450821318-46) [   x:test] o.a.s.c.S.Request [test]  webapp=/solr path=/select params={q=text:Hillary} hits=2 status=0 QTime=0

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema name="adtrax" version="1.6">
+	<!-- define fields -->
+	<field name="id" type="int" indexed="true" stored="true" required="true" multiValued="false"/> 
+	<field name="title" type="text_words" indexed="true" stored="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/> 
+
+	<field name="text" type="text_words" indexed="true" stored="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
+
+  <uniqueKey>id</uniqueKey>
+
+	<!-- define field types -->
+    <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+    <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+    <fieldType name="int" class="solr.TrieIntField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="float" class="solr.TrieFloatField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="long" class="solr.TrieLongField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="double" class="solr.TrieDoubleField" precisionStep="0" positionIncrementGap="0"/>
+
+    <fieldType name="tint" class="solr.TrieIntField" precisionStep="8" positionIncrementGap="0"/>
+    <fieldType name="tfloat" class="solr.TrieFloatField" precisionStep="8" positionIncrementGap="0"/>
+    <fieldType name="tlong" class="solr.TrieLongField" precisionStep="8" positionIncrementGap="0"/>
+    <fieldType name="tdouble" class="solr.TrieDoubleField" precisionStep="8" positionIncrementGap="0"/>
+
+    <fieldType name="date" class="solr.TrieDateField" precisionStep="0" positionIncrementGap="0"/>
+    <fieldType name="tdate" class="solr.TrieDateField" precisionStep="6" positionIncrementGap="0"/>
+	
+<fieldType name="text_words" class="solr.TextField" positionIncrementGap="100">
+    <analyzer type="index">
+      <tokenizer class="solr.PatternTokenizerFactory" pattern="[^\w]"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+      <filter class="solr.PorterStemFilterFactory"/>
+    </analyzer>
+    
+    <analyzer type="query">
+      <tokenizer class="solr.PatternTokenizerFactory" pattern="[^\w\?\*]"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+      <filter class="solr.PorterStemFilterFactory"/>
+    </analyzer>
+  </fieldType>
+</schema>

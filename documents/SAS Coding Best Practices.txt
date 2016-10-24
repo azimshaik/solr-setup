@@ -1,0 +1,17 @@
+SAS Code
+The implementation of standard programming techniques results in:
+• Clarity of program code
+• Maintainability of code
+• Survivability of code
+• Ability to transfer code among members of the group
+• Ability to transfer code among other programs
+• Ability for a knowledgeable outsider to read code and understand it.
+Categories of Programming Guidelines
+Guidelines will be defined for the following areas:
+• Naming Conventions
+• Compatibility
+• Documentation
+• Appearance
+• Efficiency
+• Maintainability
+• Macros
